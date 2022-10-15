@@ -1,0 +1,415 @@
+/* Competition Page */
+.competition-page .post-box {
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem;
+    line-height: 1.5;
+    background-color: #fff;
+    padding: 2rem 2.4rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 0.8rem;
+    transition: all ease-in-out 0.3s;
+}
+
+.competition-page .post-box .post-img {
+    overflow: hidden;
+    margin-bottom: 1rem;
+    border-radius: 0.6rem;
+    position: relative;
+    height: 14rem;
+}
+
+.competition-page .post-box .post-img img {
+    transition: all ease-in-out 0.4s;
+    object-fit: cover !important;
+    object-position: center center;
+    width: 100%;
+    height: 100%;
+}
+
+.competition-page .post-box .post-date {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: rgba(1, 41, 112, 0.6);
+    display: block;
+    margin-bottom: 10px;
+}
+
+.competition-page .post-box .post-title {
+    font-size: 1.2rem;
+    color: var(--successMain);
+    font-weight: 700;
+    margin-bottom: 1rem;
+    position: relative;
+    transition: all ease-in-out 0.3s;
+}
+
+.competition-page .post-box p {
+    font-size: 0.9rem;
+}
+
+.competition-page .post-box:hover {
+    transform: scale(1.04);
+}
+
+.competition-page .post-box:hover .post-img img {
+    transform: scale(1.04);
+}
+
+.competition-page p.regis-deadline {
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
+/* Competition Detail Page */
+.competitionDetail-page .entry {
+    padding: 30px;
+}
+
+.competitionDetail-page .entry-img {
+    width: 100%;
+    display: block;
+    min-height: 20rem;
+    max-height: 35rem;
+    overflow: hidden;
+    object-fit: cover;
+    margin: 2rem auto;
+    border-radius: 0.3rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+        rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    padding: 0;
+}
+
+.competitionDetail-page .entry .entry-title {
+    font-size: 2.2em;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    font-weight: 600;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.competitionDetail-page .entry .entry-title a {
+    color: #012970;
+    transition: 0.3s;
+}
+
+.competitionDetail-page .entry .entry-title a:hover {
+    color: #4154f1;
+}
+
+.competitionDetail-page .entry .entry-meta {
+    margin-bottom: 15px;
+    color: #4084fd;
+}
+
+.competitionDetail-page .entry .entry-meta ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.competitionDetail-page .entry .entry-meta ul li + li {
+    padding-left: 20px;
+}
+
+.competitionDetail-page .entry .entry-meta i {
+    font-size: 16px;
+    margin-right: 8px;
+    line-height: 0;
+}
+
+.competitionDetail-page .entry .entry-meta a {
+    color: #777777;
+    font-size: 0.9rem;
+    display: inline-block;
+    line-height: 1;
+}
+
+.competitionDetail-page .entry .entry-content {
+    margin: 1.8rem auto;
+}
+
+.competitionDetail-page .entry .entry-content p {
+    font-size: 1.1rem;
+    text-align: justify;
+    margin: 2rem auto;
+}
+
+.competitionDetail-page .entry .entry-content iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+.competitionDetail-page .entry .entry-content img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.competitionDetail-page .entry .entry-content .read-more {
+    -moz-text-align-last: right;
+    text-align-last: right;
+}
+
+.competitionDetail-page .entry .entry-content .read-more a {
+    display: inline-block;
+    background: #4154f1;
+    color: #fff;
+    padding: 6px 20px;
+    transition: 0.3s;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.competitionDetail-page .entry .entry-content .read-more a:hover {
+    background: #5969f3;
+}
+
+.competitionDetail-page .entry .entry-content h3 {
+    font-size: 22px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.competitionDetail-page .entry .entry-content blockquote {
+    overflow: hidden;
+    background-color: #fafafa;
+    padding: 60px;
+    position: relative;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.competitionDetail-page .entry .entry-content blockquote p {
+    color: #444444;
+    line-height: 1.6;
+    margin-bottom: 0;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.competitionDetail-page .entry .entry-content blockquote::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background-color: #012970;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.competitionDetail-page .entry .entry-footer {
+    padding-top: 10px;
+    border-top: 1px solid #e6e6e6;
+}
+
+.competitionDetail-page .entry .entry-footer i {
+    color: #0d64fd;
+    display: inline;
+}
+
+.competitionDetail-page .entry .entry-footer a {
+    color: #013289;
+    transition: 0.3s;
+}
+
+.competitionDetail-page .entry .entry-footer a:hover {
+    color: #4154f1;
+}
+
+.competitionDetail-page .entry .entry-footer .cats {
+    list-style: none;
+    display: inline;
+    padding: 0 20px 0 0;
+    font-size: 14px;
+}
+
+.competitionDetail-page .entry .entry-footer .cats li {
+    display: inline-block;
+}
+
+.competitionDetail-page .entry .entry-footer .tags {
+    list-style: none;
+    display: inline;
+    padding: 0;
+    font-size: 14px;
+}
+
+.competitionDetail-page .entry .entry-footer .tags li {
+    display: inline-block;
+    margin: 0 0.4rem;
+    background-color: var(--himatif_blue) !important;
+    padding: 0.4rem 0.6rem;
+}
+
+.competitionDetail-page .competitionDetail-page-posts .related-post {
+    font-weight: bold;
+}
+
+.entry hr {
+    height: 1px;
+    background-color: rgb(203, 206, 209);
+}
+
+#related-section {
+    margin: 2rem auto;
+}
+
+@media (max-width: 1365px) {
+    .entries {
+        margin: 0 2rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .competition-page .post-box .post-title {
+        font-size: 1.35rem !important;
+    }
+}
+
+@media (max-width: 575px) {
+    .entries {
+        margin: 0;
+    }
+
+    .competitionDetail-page .entry .entry-meta ul li {
+        padding: 0.4rem 0;
+    }
+    .competitionDetail-page .entry .entry-meta ul li + li {
+        padding-left: 0;
+    }
+
+    .competitionDetail-page .entry .entry-content p {
+        font-size: 1rem;
+        line-height: 1.8rem;
+    }
+
+    #related-section {
+        margin: 1rem auto;
+    }
+}
+
+.target{
+    border : 2px solid rgb(214, 155, 27);
+    border-radius: 15px;
+    padding: 0 15px;
+    
+   
+}
+
+.silabus{
+    border: 2px solid rgb(138, 136, 136);
+}
+.pilihan{
+    border: 2px solid rgb(138, 136, 136);
+}
+
+html {
+    font-size: 15px;
+ }
+ 
+ body {
+     font-family: sans-serif;
+     font-size: 1em;
+     line-height: 1.4;
+     color: #444;
+ }
+ 
+ main {
+   max-width: 1000px;
+   margin: 0 auto;
+ }
+ 
+ .table-wrapper {
+     overflow: auto;
+ }
+ 
+ .text-center {
+     text-align: center;
+ }
+ 
+ .table-siswa, .table-date {
+     border-collapse: collapse;
+     width: 100%;
+     margin: 0;
+     padding: 0;
+ }
+ 
+ .table-siswa td {
+     border: 1px solid silver;
+     position: relative;
+     padding: 5px;
+ }
+ 
+ .td-date .date {
+     display: inline-block;
+     width: 25px;
+ }
+ 
+ .label-checkbox {
+     position: absolute;
+     left: 0;
+     right: 0;
+     top: 0;
+     height: 100%;
+     display: block;
+     background: #cecece;
+ }
+ 
+ .label-checkbox:hover {
+     background: #bff8ff;
+ }
+ 
+ .label-checkbox input {
+     margin: 0;
+     -webkit-appearance: none;
+     height: 100%;
+     position: absolute;
+     left: 0;
+     right: 0;
+     top: 0;
+     width: 100%;
+     border: 0;
+     cursor: pointer;
+     outline: none;
+ }
+ 
+ .label-checkbox.active, .label-checkbox.active input, .label-checkbox input:checked {
+     background: #2196F3;
+ }
+ 
+ .label-checkbox.active::before {
+     content: "✓";
+     display: block;
+     position: absolute;
+     z-index: 5;
+     color: #fff;
+     top: 15%;
+     left: 35%;
+ }
+ 
+ 
+ .box-color {
+     display: inline-block;
+     width: 1em;
+     height: 1em;
+     vertical-align: middle;
+ }
+ 
+ .box-color.true {
+    background: #2196F3;
+ }
+ 
+ .box-color.false {
+    background: #cecece;
+ }
+
+ 

@@ -1,0 +1,202 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700&family=Roboto&display=swap');
+
+
+.cntr{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.cntr .crd{
+    position: relative;
+    width: 250px;
+    height: 300px;
+    margin: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cntr .crd .cntnt{
+    position:absolute;
+    bottom: -160px;
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    flex-direction: column;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: bottom 0.5;
+    transition-delay: 0.8s;
+}
+
+.cntr .crd:hover .cntnt{
+    bottom: 0px;
+    transition-delay: 0s;
+}
+
+.cntr .crd .cntnt .contentBox h3{
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 15px;
+    line-height: 1.1em;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition-delay:0.6s;
+}
+
+.cntr .crd:hover .cntnt .contentBox h3 {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.cntr .crd .cntnt .contentBox h3 span{
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: initial;
+} */
+/* section
+{
+    position: relative;
+    
+}
+section::before
+{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(154, 50, 202, 0.82),rgb(204, 192, 204));
+    clip-path: circle(30% at right 70%);
+}
+
+section::after
+{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(154, 50, 202, 0.82),rgb(204, 192, 204));
+    clip-path: circle(20% at 10% 10%);
+} */
+
+.cntr
+{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+.cntr .crd
+{
+    position: relative;
+    width: 230px;
+    height: 300px;
+    background:rgba(42, 38, 61, 0.82);
+    margin: 20px;
+    box-shadow:0 20px 45px  rgba(42, 38, 61, 0.82);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter:blur(10px) ;
+}
+.cntr .crd .cotnt
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+.cntr .crd:hover .cotnt
+{
+    opacity: 1;
+    transform: translateY(-20px);
+}
+.cntr .crd .cotnt .imgBx
+{
+    position: relative;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 7px solid rgba(247, 196, 101, 0.82);
+}
+.cntr .crd .cotnt .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.cntr .crd .cotnt .contentBx h2
+{
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 10px;
+    line-height: 1.1em;
+}
+.cntr .crd .cotnt .contentBx h2 span
+{
+    font-size: 12px;
+    color: var(--color-quartenary-dark);
+    font-weight: 300;
+    text-transform: initial;
+}
+.cntr .crd .sci
+{
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+}
+.cntr .crd .sci li
+{
+    list-style: none;
+    margin: 0 10px;
+    transform: translateY(40px);
+    transition:0.5s;
+    opacity: 0;
+    transition-delay: calc(0.1s * var(--i));
+}
+.cntr .crd:hover .sci li
+{
+    transform:translateY(0px);
+    opacity: 1;
+}
+.cntr .crd .sci li a
+{
+    color: #fff;
+    font-size: 24px;
+}
